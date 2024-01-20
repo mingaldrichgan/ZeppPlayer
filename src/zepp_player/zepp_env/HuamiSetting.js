@@ -59,7 +59,7 @@ export default class HuamiSettingMock {
     mockedProperties = [
         // [get, set, default]
         ["getScreenAutoBright", "setScreenAutoBright", true],
-        ["getBrightness", "setBrightness", 90],
+        ["getBrightness", "setBrightness", 80],
         ["setBrightScreenCancel", "setBrightScreen", 0],
         ["setScreenOff", "", true],
         ["getMileageUnit", "", 0],

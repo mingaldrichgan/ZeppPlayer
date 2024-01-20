@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # This script will setup venv if required
 # and run zp_server/main.py

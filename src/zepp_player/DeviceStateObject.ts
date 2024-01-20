@@ -26,7 +26,7 @@ import {SelectDeviceState} from "./device_state/SelectDeviceState";
 
 export class DeviceState {
     STEP_TARGET = new NumberDeviceState({
-        value: 9000,
+        value: 10_000,
         displayConfig: {
             type: "number",
             groupIcon: "fitness_center",
@@ -35,7 +35,7 @@ export class DeviceState {
     });
 
     CAL_TARGET = new NumberDeviceState({
-        value: 500,
+        value: 350,
         displayConfig: {
             type: "number",
             groupIcon: "fitness_center",
@@ -72,7 +72,7 @@ export class DeviceState {
     });
 
     HOUR = new NumberDeviceState({
-        value: 9,
+        value: 10,
         maxValue: 12,
         shiftTickCount: 2,
         shiftStep: 1,
@@ -89,7 +89,7 @@ export class DeviceState {
     });
 
     MINUTE = new NumberDeviceState({
-        value: 30,
+        value: 9,
         maxValue: 60,
         shiftStep: 5,
         displayConfig: {
@@ -105,7 +105,7 @@ export class DeviceState {
     });
 
     SECOND = new NumberDeviceState({
-        value: 45,
+        value: 0,
         maxValue: 60,
         shiftStep: 1,
         displayConfig: {
@@ -121,7 +121,7 @@ export class DeviceState {
     });
 
     DAY = new NumberDeviceState({
-        value: 25,
+        value: 6,
         maxValue: 31,
         shiftStep: 1,
         displayConfig: {
@@ -137,7 +137,7 @@ export class DeviceState {
     });
 
     MONTH = new NumberDeviceState({
-        value: 7,
+        value: 3,
         maxValue: 12,
         shiftStep: 1,
         shiftTickCount: 2,
@@ -154,7 +154,7 @@ export class DeviceState {
     });
 
     YEAR = new NumberDeviceState({
-        value: 22,
+        value: 23,
         shiftStep: 0,
         displayConfig: {
             type: "number",
@@ -169,7 +169,7 @@ export class DeviceState {
     });
 
     WEEKDAY = new NumberDeviceState({
-        value: 0,
+        value: 3,
         shiftStep: 1,
         shiftTickCount: 2,
         maxValue: 6,
@@ -236,7 +236,7 @@ export class DeviceState {
     });
 
     BATTERY = new NumberDeviceState({
-        value: 60,
+        value: 35,
         maxValue: 100,
         shiftStep: 10,
         displayConfig: {
@@ -256,7 +256,7 @@ export class DeviceState {
     });
 
     DISCONNECT = new BooleanDeviceState({
-        value: true,
+        value: false,
         displayConfig: {
             groupIcon: "settings",
             maxLength: 1,
@@ -280,7 +280,7 @@ export class DeviceState {
     });
 
     STEP = new NumberDeviceState({
-        value: 4500,
+        value: 8000,
         shiftStep: 500,
         get maxValue(): number {
             return this.fetchMaxValue();
@@ -299,7 +299,7 @@ export class DeviceState {
     });
 
     DISTANCE = new NumberDeviceState({
-        value: 1.5,
+        value: 3.5,
         shiftStep: 0.75,
         maxValue: 20,
         displayConfig: {
@@ -313,7 +313,7 @@ export class DeviceState {
     });
 
     CAL = new NumberDeviceState({
-        value: 320,
+        value: 280,
         shiftStep: 30,
         get maxValue(): number {
             return this.fetchMaxValue();
@@ -354,7 +354,7 @@ export class DeviceState {
     });
 
     HEART = new NumberDeviceState({
-        value: 99,
+        value: 97,
         shiftStep: 15,
         maxValue: 180,
         displayConfig: {
@@ -397,7 +397,7 @@ export class DeviceState {
     });
 
     PAI_WEEKLY = new NumberDeviceState({
-        value: 55,
+        value: 80,
         maxValue: 100,
         shiftStep: 4,
         displayConfig: {
@@ -430,7 +430,7 @@ export class DeviceState {
     });
 
     WEATHER_CURRENT = new NumberDeviceState({
-        value: 12,
+        value: 26,
         displayConfig: {
             type: "number",
             groupIcon: "sunny",
@@ -446,7 +446,7 @@ export class DeviceState {
     });
 
     WEATHER_HIGH = new NumberDeviceState({
-        value: 24,
+        value: 26,
         displayConfig: {
             type: "number",
             groupIcon: "sunny",

@@ -610,6 +610,10 @@ class SleepSensor {
             DEEP_STAGE: 3
         }
     }
+
+    getBasicInfo() {
+        return { score: 97 };
+    }
 }
 
 /**

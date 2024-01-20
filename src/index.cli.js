@@ -65,7 +65,6 @@ async function createGif(player) {
         const canvas = await player.render();
         gif.addFrame(canvas.getContext("2d"));
 
-        player.performShift(i);
         player.currentRuntime.callDelegates("resume_call");
     }
 

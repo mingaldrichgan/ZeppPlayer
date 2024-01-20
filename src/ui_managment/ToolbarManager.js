@@ -73,7 +73,7 @@ export class ToolbarManager {
         ToolbarManager.actionToggleEditor = ToolbarManager.bindSwitchBtn({
             blockId: "toggle_edit",
             configId: "panelEditorVisible",
-            fallback: false,
+            fallback: true,
             handler: (v) => {
                 document.getElementById("view_edit").style.display = v ? "" : "none";
             }

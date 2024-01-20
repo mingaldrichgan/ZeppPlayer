@@ -71,7 +71,7 @@ def build_menu():
         pystray.MenuItem('Source code', lambda: webbrowser.open(LINK_SRC)),
         pystray.Menu.SEPARATOR,
         pystray.MenuItem("Check for update on start", toggle_updater,
-                         checked=lambda _: user_config.get_prop("check_updates", True)),
+                         checked=lambda _: user_config.get_prop("check_updates", False)),
         pystray.MenuItem("Open browser on start", toggle_auto_browser,
                          checked=lambda _: user_config.get_prop("auto_browser", True)),
         pystray.Menu.SEPARATOR,
@@ -87,7 +87,7 @@ def do_exit():
 
 
 def toggle_updater():
-    user_config.set_prop("check_updates", not user_config.get_prop("check_updates", True))
+    user_config.set_prop("check_updates", not user_config.get_prop("check_updates", False))
 
 
 def toggle_auto_browser():

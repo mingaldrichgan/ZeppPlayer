@@ -52,8 +52,8 @@ def make_darwin():
 	subprocess.Popen(["npm", "run", "build"]).wait()
 	subprocess.Popen(["pyinstaller", 'ZeppPlayer.osx.spec']).wait()
 
-	with TarFile.open(f"dist/ZeppPlayer_v{get_version()}_macos.tar.gz", "x:gz") as tar:
-		tar.add("dist/ZeppPlayer.app", recursive=True)
+	shutil.rmtree("dist/ZeppPlayer")
+	subprocess.Popen(["open", "dist/ZeppPlayer.app"])
 
 
 def make_win32():

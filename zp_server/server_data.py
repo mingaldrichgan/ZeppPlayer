@@ -23,7 +23,7 @@ if sys.platform == "darwin" or str(ROOT_DIR).startswith("/opt") or str(ROOT_DIR)
     PROJECTS_DIR = CONFIG_DIR / "projects"
 
 LINK_WEB = "https://mmk.pw/en/zepp_player"
-LINK_SRC = "https://github.com/melianmiko/ZeppPlayer"
+LINK_SRC = "https://github.com/mingaldrichgan/ZeppPlayer"
 PORT = 3195
 
 HTML_TEMPLATE = """<!DOCTYPE html>
